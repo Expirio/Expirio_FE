@@ -62,7 +62,6 @@ export default {
         const data = await Services.getSecretWithPass(pass);
         return data;
       } catch (error) {
-        console.log('Error', error);
         return null;
       }
     },

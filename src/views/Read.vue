@@ -28,7 +28,6 @@ export default {
   },
   created() {
     this.param = this.$route.params && this.$route.params.hash ? this.$route.params.hash : null;
-    console.log('param', this.hash, this.param);
   },
 };
 </script>
