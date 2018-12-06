@@ -1,4 +1,4 @@
-# test travis
+# Expir.io
 
 ## Project setup
 ```
