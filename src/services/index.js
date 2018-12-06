@@ -23,15 +23,12 @@ class Services {
    * @returns { object }
    */
   static async getSecret(hash) {
-    console.log('getSecret', hash);
     try {
       const url = `https://fakeurl.com?secret=${hash}`;
       const response = await fakeCall(url, hash);
       // const body = await response.json();
-      console.log('hash', hash, response);
       return response;
     } catch (err) {
-      console.error(err.message);
       return err;
     }
   }
@@ -44,15 +41,12 @@ class Services {
    * @returns { object }
    */
   static async getSecretWithPass(pass) {
-    console.log('getSecretWithPass', pass);
     try {
       const url = `https://fakeurl.com?secret=${pass}`;
       const response = await fakeCall(url, pass);
       // const body = await response.json();
-      console.log('pass', pass, response);
       return response;
     } catch (err) {
-      console.error(err.message);
       return err;
     }
   }
